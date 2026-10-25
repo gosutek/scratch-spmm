@@ -503,7 +503,7 @@ void pretty_print(const std::filesystem::path& dir, const char* csv_filename)
 
 int main(void)
 {
-	// print_prompt_bytes("The");
+	do_stuff();
 	// const auto bench = bench_spmm_cusparse("run/data/dlmc/transformer/l0_regularization/0.5/body_encoder_layer_2_self_attention_multihead_attention_v.smtx", SPMM_KERNEL_TYPE_ELEMWISE_NAIVE_BLOCK);
 	// std::cout << std::left << std::setw(15) << "[SPMM]: " << bench.time[0] << " ms | " << bench.flops[0] << " GFLOPs\n"
 	// 		  << std::left << std::setw(15) << "[CUSPARSE]: " << bench.time[1] << " ms | " << bench.flops[1] << " GFLOPS\n";

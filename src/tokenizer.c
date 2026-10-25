@@ -1,12 +1,29 @@
-#include "tokenizer.h"
-#include "spmm.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
 
-void normalizer(const char* str)
+#include "spmm.h"
+#include "tokenizer.h"
+
+void normalizer(char* str)
 {
-	const u8* b_str = (const u8*)str;
+	printf("%s\n", str);
+	u8* b_str = (u8*)str;
 	while (*b_str != '\0') {
 		if (*b_str == ' ') {
 			*b_str = '_';
 		}
+		++b_str;
 	}
+
+	printf("%s\n", str);
+}
+
+void do_stuff()
+{
+	char* text = (char*)malloc(strlen("Hello, World!") + 1);
+
+	strcpy(text, "Hello, World!");
+	normalizer(text);
+	free(text);
 }

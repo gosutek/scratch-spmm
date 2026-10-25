@@ -151,9 +151,16 @@ extern "C"
     * +------------------------------------------------------------------------------+
   */
 
+	void do_stuff();
+
+	/*
+    * +------------------------------------------------------------------------------+
+    * |                                  CUDA OPS                                    |
+    * +------------------------------------------------------------------------------+
+  */
+
 	SpmmStatus_t spmm(ExecutionContext_t ctx, SpMatDescr_t sp, DnMatDescr_t dn, DnMatDescr_t res, SpmmKernelType_t kernel_type, SpmmInvert_t invert);
 
-	void print_prompt_bytes(const char* c);
 #if defined(__cplusplus)
 }
 #endif

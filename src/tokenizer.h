@@ -3,6 +3,6 @@
 
 #include "helpers.h"
 
-void normalizer(const char* str);
+void normalizer(char* str);
 
 #endif  // TOKENIZER_H
